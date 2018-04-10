@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Galerie Vidéo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand" style="color:white">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="gal_img.html">Images</a>
+              <a class="dropdown-item" href="gal_vid.html">Vidéos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:cmancec@gmail.com">Contact</a>
+            </li>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <div class="starter-template">
+        <h1>Galerie vidéos</h1>
+        <p class="lead">Images de synthèses 3D animées<br> Dans cette galerie se trouvent différents essais d'animations réalisées sous blender 2.78</p>
+      </div>
+      
+<div class="row justify-content-md-center">	
+	
+	<div><figure><img class="prev_vid" src="../ressources/IMG/chemin_portal.png"></img><figcaption>Intro JFLMQMP</figcaption></figure></div>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portal">
+	Lire la vidéo
+	</button>
+	
+	<div><figure><img class="prev_vid" src="../ressources/IMG/eye_thumb.png"></img></img><figcaption>EyeBall</figcaption></figure></div>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eyeball">
+	Lire la vidéo
+	</button>
+	
+	<div><figure><img class="prev_vid" src="../ressources/IMG/dmc.jpg"></img></img><figcaption>Dikkenek HARDTEK</figcaption></figure></div>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#test" onclick="document.getElementById('tek').play();">
+	Lire la vidéo
+	</button>
+
+	<!-- Modal 1-->
+<div class="modal fade" id="portal" tabindex="-1" role="dialog" aria-labelledby="INTRO JFLMQMP" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Intro Projet Je filme le métier qui me plaît</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('intro').pause();">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+		<div class="modal-body">
+			<video id="intro" width="513" height="315" controls>
+				<source src="../ressources/VID/intro_ralentis.mp4" type="video/mp4"/>
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- Modal 2-->
+<div class="modal fade" id="eyeball" tabindex="-1" role="dialog" aria-labelledby="Eye Ball" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">EyeBall</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('eye').pause();">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <video id="eye" width="513" height="315" controls>
+			<source src="../ressources/VID/EyeBall.mp4" type="video/mp4"/>
+			Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- Modal 3-->
+<div class="modal fade" id="test" tabindex="-1" role="dialog" aria-labelledby="TEST" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Mix hardtek - Dikkenek</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="document.getElementById('tek').pause();">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <video id="tek" width="513" height="315" controls>
+			<source src="../ressources/VID/hardtek dikkenek - bridoo.mp4" type="video/mp4"/>
+			Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+</div>	<!-- row -->
+    </main><!-- container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

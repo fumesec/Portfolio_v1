@@ -6,9 +6,39 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  background-color: black;
 }
-
-
+.navbar {
+	background-color:black;
+}
+.dropdown-menu {
+	background-color:black;
+}
+.dropdown-item {
+	color:white;
+}
+.nav-link, .navbar-brand {
+	color:white;
+}
+.navbar-brand:hover, .nav-link:hover {
+	color:grey;
+}
+input {
+	background-color:grey;
+}
+.btn-outline-success {
+	color:white;
+	border-color:grey;
+}
+.btn-outline-success:hover {
+	color:grey;
+	border-color:white;
+	background-color:black;
+}
+.btn-primary {
+	background-color:black;
+	text-shadow:1px 1px rgba(255, 255, 255, 0.30);
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -20,6 +50,7 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  text-shadow:4px 4px 4px black;
 }
 
 /* Declare heights because of positioning of img element */
@@ -42,7 +73,46 @@ footer {
 	margin-right:25%;
 	padding:1%;
 }
+/* Custom pages - galeries 
+-------------------------------------------------- */
 
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: rgba(255,255,255, 0.75);
+}
+main {
+	margin-top:2%;
+}
+.row {
+    display: flex;
+	flex:wrap;
+	justify-content: space-around;
+    text-align: center;
+    margin-top:3%;
+    margin-right:auto;
+	margin-left:auto;
+	padding-top:5%;
+    padding-bottom:5%;
+	background-color:rgba(180, 180, 180, 0.10);
+    border-radius: 2.5%;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    width:75%;
+}
+ul, li {
+	list-style: none;
+}
+figure {
+	margin-left:auto;
+	margin-right:auto;
+}
+#myImg01, #myImg02, #myImg03 {
+    width:40%;
+}
+#myImg04 {
+    width:40%;
+    height:110%;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -58,8 +128,16 @@ footer {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-.container {
-	border: dotted black;
+
+/* Modal 
+------------------------- */
+.modal-content {
+	width: 640px;
+	height: 480px;
+    max-width: 900px;
+}
+.modal-dialog {
+	margin-top:8%;
 }
 
 /* Featurettes
@@ -67,6 +145,12 @@ footer {
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+/* visiblity */
+  border: solid 1px gray;
+}
+/* visibility */
+.featurette {
+	/*border: dotted yellow;*/
 }
 
 /* Thin out the marketing headings */
@@ -75,7 +159,19 @@ footer {
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
+.featurette-image {
+	/*border:dotted 2px white;*/
+	border-radius: 6px;
+}
+.featurette-image:hover {
+	transform: scale(1.05);
+}
+.prev_vid {
+	width:50%;
+	margin-bottom:3%;
+	margin-top:3%;
+	border-radius:20% 5% / 10% 40%;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
